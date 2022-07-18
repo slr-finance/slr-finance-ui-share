@@ -1,0 +1,13 @@
+{
+  "name": "slr-finance-ui-share",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/slr-finance/slr-finance-ui-share.git",
+  "license": "MIT",
+  "dependencies": {
+    "js-cookie": "3.0.1"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "3.0.2"
+  }
+}
