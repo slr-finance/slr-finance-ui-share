@@ -1,13 +1,28 @@
 {
-  "name": "slr-finance-ui-share",
-  "version": "1.0.1",
-  "main": "src/index.ts",
+  "name": "@slr-finance/ui-share",
+  "version": "1.0.2",
+  "private": "true",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "repository": "https://github.com/slr-finance/slr-finance-ui-share.git",
   "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && rollup --config rollup.config.ts --configPlugin typescript"
+  },
   "dependencies": {
     "js-cookie": "3.0.1"
   },
   "devDependencies": {
-    "@types/js-cookie": "3.0.2"
+    "@rollup/plugin-eslint": "8.0.2",
+    "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-typescript": "8.3.3",
+    "@types/js-cookie": "3.0.2",
+    "@types/node": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "5.30.7",
+    "@typescript-eslint/parser": "5.30.7",
+    "rollup": "2.77.0",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
   }
 }
